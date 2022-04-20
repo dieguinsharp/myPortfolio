@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\myImg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\myImg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ooui" Version="0.14.16" />
+    <PackageReference Include="Ooui.AspNetCore" Version="0.14.16" />
+    <PackageReference Include="Ooui.Forms" Version="0.14.16" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Overview.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

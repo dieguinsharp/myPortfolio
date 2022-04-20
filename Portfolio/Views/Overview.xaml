@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.Views.Overview">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label" x:Key="lblTitle">
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Label" x:Key="lblItemsBlack">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Label" x:Key="lblItemsWhite">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="StackLayout" x:Key="stacksItemsWhite">
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="Padding" Value="100, 70"/>
+            <Setter Property="Spacing" Value="30"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+        <Style TargetType="StackLayout" x:Key="stacksItemsGray">
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="Padding" Value="100, 70"/>
+            <Setter Property="Spacing" Value="30"/>
+            <Setter Property="BackgroundColor" Value="#3B3B3B"/>
+        </Style>
+        <Style TargetType="Label" x:Key="lblAboutMe">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalTextAlignment" Value="End"/>
+        </Style>
+        <Style TargetType="Label" x:Key="lblTitleAboutMe">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="end"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3B3B3B" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid Padding="15" BackgroundColor="#202020">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Diego Soares" Style="{StaticResource lblTitle}" VerticalOptions="CenterAndExpand" FontAttributes="None" TextColor="White"/>
+                <StackLayout Orientation="Horizontal" Spacing="20" Grid.Column="1" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                    <Label Text="Contato" FontSize="Medium" TextColor="White"/>
+                    <Label Text="Github" FontSize="Medium" TextColor="White"/>
+                </StackLayout>
+            </Grid>
+
+            <ScrollView>
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <StackLayout Style="{StaticResource stacksItemsGray}" Orientation="Horizontal">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="0">
+                            <Label Text="Sobre mim" Style="{StaticResource lblTitleAboutMe}"/>
+                            <StackLayout Spacing="0">
+                                <StackLayout.Resources>
+                                    <Style TargetType="Label" BasedOn="{StaticResource lblAboutMe}"/>
+                                </StackLayout.Resources>
+                                <Label Text="Meu nome é Diego Menezes Soares"/>
+                                <Label Text="Tenho 20 anos e sou estudante de tecnologia"/>
+                                <Label Text="Atualmente cursando Análise e Desenvolvimento de sistemas na PUC Minas"/>
+                                <Label Text="Criei esse portfólio com intuito de mostrar o que ando fazendo em minha caminhada"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Frame Grid.Column="1" CornerRadius="250" Padding="0" BorderColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                            <Image x:Name="myImg" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" HeightRequest="250" WidthRequest="250"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource stacksItemsWhite}">
+                        <Label Text="Conhecimentos" Style="{StaticResource lblTitle}" TextColor="Black"/>
+                        <StackLayout Spacing="10" HorizontalOptions="FillAndExpand">
+                            <StackLayout.Resources>
+                                <Style TargetType="Label" BasedOn="{StaticResource lblItemsBlack}"/>
+                            </StackLayout.Resources>
+                            <Label Text="1. C# POO"/>
+                            <Label Text="2. SQL Server"/>
+                            <Label Text="3. Entity Framework Core"/>
+                            <Label Text="4. Windows Forms Presentation"/>
+                            <Label Text="5. Api Rest"/>
+                            <Label Text="6. Xamarin Forms usando MVVM"/>
+                            <Label Text="7. MVVM Pattern"/>
+                            <Label Text="8. Git"/>
+                            <Label Text="9. Princípios SOLID"/>
+                            <Label Text="10. Unit Tests"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource stacksItemsGray}">
+                        <Label Text="Gosto de" Style="{StaticResource lblTitle}" TextColor="White"/>
+                        <StackLayout Spacing="10" HorizontalOptions="FillAndExpand">
+                            <StackLayout.Resources>
+                                <Style TargetType="Label" BasedOn="{StaticResource lblItemsWhite}"/>
+                            </StackLayout.Resources>
+                            <Label Text="1. Sempre buscar novos desafios"/>
+                            <Label Text="2. Procurar sempre o melhor caminho para resolver o problema"/>
+                            <Label Text="3. Manter sempre um codigo limpo e legível"/>
+                            <Label Text="4. Ser esclarecedor em minhas escolhas"/>
+                            <Label Text="5. Debater sobre escolhas que não está me convencendo"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource stacksItemsWhite}">
+                        <Label Text="No meu tempo livre" Style="{StaticResource lblTitle}" TextColor="Black"/>
+                        <StackLayout Spacing="10" HorizontalOptions="FillAndExpand">
+                            <StackLayout.Resources>
+                                <Style TargetType="Label" BasedOn="{StaticResource lblItemsBlack}"/>
+                            </StackLayout.Resources>
+                            <Label Text="1. Gosto de jogar futebol"/>
+                            <Label Text="2. Me encontrar com amigos"/>
+                            <Label Text="3. Passar momentos com a família"/>
+                            <Label Text="4. Estudar outras tecnologias"/>
+                            <Label Text="5. Buscar as novidades do mercado"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource stacksItemsGray}">
+                        <Label Text="Contato" Style="{StaticResource lblTitle}" TextColor="White"/>
+                        <StackLayout Spacing="10" HorizontalOptions="FillAndExpand">
+                            <StackLayout.Resources>
+                                <Style TargetType="Label" BasedOn="{StaticResource lblItemsWhite}"/>
+                            </StackLayout.Resources>
+                            <Label Text="1. Facebook"/>
+                            <Label Text="2. Linkedin"/>
+                            <Label Text="3. Email"/>
+                            <Label Text="4. WhatsApp"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
