@@ -65,6 +65,7 @@
                 <StackLayout Orientation="Horizontal" Spacing="20" Grid.Column="1" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
                     <Label Text="Contato" FontSize="Medium" TextColor="White" />
                     <Label Text="Github" FontSize="Medium" TextColor="White" />
+                    <Label Text="Github" FontSize="Medium" TextColor="White" />
                 </StackLayout>
             </Grid>
 
