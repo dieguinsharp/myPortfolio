@@ -16,6 +16,7 @@
     <PackageReference Include="Ooui" Version="0.14.16" />
     <PackageReference Include="Ooui.AspNetCore" Version="0.14.16" />
     <PackageReference Include="Ooui.Forms" Version="0.14.16" />
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
   </ItemGroup>
 
@@ -23,6 +24,10 @@
     <EmbeddedResource Update="Views\Overview.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CustomComponents\" />
   </ItemGroup>
 
 </Project>

@@ -34,6 +34,7 @@
           "Ooui": "0.14.16",
           "Ooui.AspNetCore": "0.14.16",
           "Ooui.Forms": "0.14.16",
+          "Prism.Core": "8.1.97",
           "Xamarin.Forms": "5.0.0.2401",
           "Microsoft.AspNetCore.Antiforgery.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
@@ -972,6 +973,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Ooui.Forms.dll": {}
+        }
+      },
+      "Prism.Core/8.1.97": {
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -3992,6 +4004,13 @@
       "sha512": "sha512-FlpNNUoIpvP5fBLIJ9zQTw4nzRo8YZ8ujvOfiyQ39+2hT5n9OFogCpQKn8YOrNOYQe0XipQao8NGfhXQVFHRHQ==",
       "path": "ooui.forms/0.14.16",
       "hashPath": "ooui.forms.0.14.16.nupkg.sha512"
+    },
+    "Prism.Core/8.1.97": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EP5zrvWddw3eSq25Y7hHnDYdmLZEC2Z/gMrvmHzUuLbitmA1UaS7wQUlSwNr9Km8lzJNCvytFnaGBEFukHgoHg==",
+      "path": "prism.core/8.1.97",
+      "hashPath": "prism.core.8.1.97.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

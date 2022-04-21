@@ -1,5 +1,6 @@
 ﻿using Ooui;
 using Portfolio.Core;
+using Prism.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,21 @@ namespace Portfolio.Views {
             };*/
 
             myImg.Source = ImageSource.FromFile("Images/myImg.png");
+        }
+    }
+
+    public class CustomButton : Ooui.Button {
+        public CustomButton () {
+            this.MouseLeave += OnMouseLeave;
+            this.MouseOver += OnMouseOver;
+        }
+
+        public void OnMouseLeave (object sender, EventArgs args) {
+
+        }
+
+        public void OnMouseOver (object sender, EventArgs args) {
+
         }
     }
 

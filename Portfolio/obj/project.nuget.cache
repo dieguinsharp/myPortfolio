@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iP0lt6/iBaaSpw6h/hnV0imCxvW5nWzb9n7jjnDZA4/XlGT9kTHDVD7NVuJxNCgwvl6flgigwFuQtVSkdckUiQ==",
+  "dgSpecHash": "CfBLde0pOH0DuYT6ZNdsojg6nvJmTmj5e6vS+yo2VPWBC7DPgpRiaQtFUpgXy/+BL0GQCTh4x3ArxcpX16n3Bg==",
   "success": true,
   "projectFilePath": "C:\\Users\\diego\\OneDrive\\Área de Trabalho\\port\\Portfolio\\Portfolio\\Portfolio.csproj",
   "expectedPackageFiles": [
@@ -80,6 +80,7 @@
     "C:\\Users\\diego\\.nuget\\packages\\ooui\\0.14.16\\ooui.0.14.16.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\ooui.aspnetcore\\0.14.16\\ooui.aspnetcore.0.14.16.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\ooui.forms\\0.14.16\\ooui.forms.0.14.16.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
